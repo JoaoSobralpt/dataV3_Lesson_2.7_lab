@@ -57,7 +57,7 @@ GROUP BY p.customer_id
 ORDER BY C.last_name ASC;
 
 -- 8 List the titles of films per category.
-SELECT f.title, f.film_id, fc.category_id, c.name
+SELECT f.title, fc.category_id, c.name
 FROM sakila.film f
 JOIN sakila.film_category fc
 USING (film_id)
